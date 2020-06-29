@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         sendmail.setOnClickListener(View.OnClickListener {
            val intent=Intent(this,Home::class.java)
             startActivity(intent)
-
+           //sending mail function
             Log.d("navigation click", "onNavigationItemSelected")
             Toast.makeText(this, "working", Toast.LENGTH_SHORT).show()
             val intent1 = Intent(Intent.ACTION_SEND)
