@@ -19,18 +19,18 @@ class MainActivity : AppCompatActivity() {
            val intent=Intent(this,Home::class.java)
             startActivity(intent)
 
-          //  Log.d("navigation click", "onNavigationItemSelected: ${R.id.contact}")
-            /*Toast.makeText(this, "working", Toast.LENGTH_SHORT).show()
-            val intent = Intent(Intent.ACTION_SEND)
-            intent.data = Uri.parse("mailto:")
+            Log.d("navigation click", "onNavigationItemSelected")
+            Toast.makeText(this, "working", Toast.LENGTH_SHORT).show()
+            val intent1 = Intent(Intent.ACTION_SEND)
+            intent1.data = Uri.parse("mailto:")
             val recipents =
                     arrayOf("vikashpurty91@gmail.com")
-            intent.type = "message/rfc822"
-            intent.putExtra(Intent.EXTRA_EMAIL, recipents)
-            intent.putExtra(Intent.EXTRA_SUBJECT, "QuizRaiders Reviews")
-            intent.setPackage("com.google.android.gm")
-            val chooser = Intent.createChooser(intent, "Send Feedback Via")
-            startActivity(chooser)*/
+            intent1.type = "message/rfc822"
+            intent1.putExtra(Intent.EXTRA_EMAIL, recipents)
+            intent1.putExtra(Intent.EXTRA_SUBJECT, "QuizRaiders Reviews")
+            intent1.setPackage("com.google.android.gm")
+            val chooser = Intent.createChooser(intent1, "Send Feedback Via")
+            startActivity(chooser)
         })
     }
 }
